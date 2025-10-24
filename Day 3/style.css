@@ -1,0 +1,64 @@
+@import url("style2.css");
+/* p{
+    background-color: rgb(57, 213, 75);
+} */
+#box{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+.paragraph{
+    background-color: pink;
+}
+h3{
+    background-color: aqua;
+}
+/* *{
+    color: rgb(140, 0, 255);
+} */
+/* b,strong,p{
+    background-color: darkcyan;
+} */
+.parent{
+    background-color: brown;
+}
+.parent p{
+    background-color: chartreuse;
+}
+.parent>p{
+    background-color: darkmagenta;
+}
+.parent +p{
+    background-color: fuchsia;
+}
+.paragraph ~ p{
+    background-color: forestgreen;
+}
+.learn-pseudo{
+    width: 100px;
+    height: 100px;
+    border: 2px dotted;
+    background-color: yellow;
+}
+.learn-pseudo:hover{
+    background-color: red;
+
+}
+.learn-pseudo:active{
+    background-color: aqua;
+}
+input:focus{
+    background-color: aqua;
+}
+ul li:first-child{
+    background-color: blue;
+}
+ul li:last-child{
+    background-color: blueviolet;
+}
+ul li:nth-child(2){
+    background-color: cornflowerblue;
+}
+ul li:nth-child(odd){
+    background-color: brown;
+}
