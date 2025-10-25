@@ -1,0 +1,75 @@
+/* #p{
+    background-color: aqua;
+}
+p::first-letter{
+    background-color: aqua;
+}
+p::first-line{
+    background-color: blue;
+}
+p::selection{
+    background-color: blueviolet;
+}
+p::after{
+    content: "after the text ";
+}
+p::before{
+    content: "before the text ";
+}
+p{
+    width: 200px;
+} */
+div{
+    /* width: 300px;
+    background-color: rgb(179, 171, 171); */
+    /* padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    padding-left: 20px; */
+    /* padding: 20px 30px 40px 20px;
+    margin: 30px 20px 30px 50px;
+    margin: 30px 20px; */
+    /* height: 300px;
+    border: 2px solid black; */
+    /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUsbmTZu_uMrmJ0z--CrG-o1UIXytu1OCizQ&s");
+    background-position: center;
+    background-size: contain; */
+
+}
+#block-ele{
+    background-color: aquamarine;
+    display: inline;
+}
+span{
+    background-color: blue;
+    display:block ;
+    width: 400px;
+    height: 30px;
+
+}
+h1{
+    background-color: aquamarine;
+    /* display: inline-block;
+    display: none; */
+    visibility: hidden;
+}
+.container{
+    width: 400px;
+    height: 400px;
+    border: 2px solid blue;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 100px 100px 100px ;
+    /* grid-template-rows: 100px 100px 100px 100px; */
+
+}
+.item{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUsbmTZu_uMrmJ0z--CrG-o1UIXytu1OCizQ&s");
+    background-position: center;
+    background-size: contain;
+
+}
