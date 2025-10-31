@@ -1,0 +1,27 @@
+body {
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.photo-frame {
+  background-color: #1a1a1a; /* Outer black frame */
+  padding: 25px;
+  display: inline-block;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.inner-frame {
+  background-color: white; /* White inner mat */
+  padding: 15px;
+}
+
+.inner-frame img {
+  display: block;
+  width: 300px; /* Adjust based on desired photo size */
+  height: auto;
+  border: 2px solid #ccc;
+}

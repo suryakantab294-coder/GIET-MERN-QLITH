@@ -1,0 +1,32 @@
+body {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Georgia', serif;
+}
+
+.border-box {
+  border: 40px solid #fbb03b; /* Yellow-Orange border */
+  padding: 50px;
+  background-color: white;
+  text-align: center;
+}
+
+.content h1 {
+  background-color: black;
+  color: #f4a09b; /* Light pinkish text */
+  font-size: 40px;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.content h3 {
+  background-color: black;
+  color: #f4a09b;
+  font-size: 18px;
+  margin-top: 10px;
+  padding: 10px 0;
+}
