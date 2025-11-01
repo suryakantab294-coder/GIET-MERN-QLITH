@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* .container{
+    width: 700px;
+    height: 500px;
+    margin: 40px auto;
+    border: 2px solid black;
+} */
+
+.item{
+    float: left;
+}
+.item1{
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    position: absolute;
+    top: 50px;
+    /* left: 30px; */
+
+}
+.item2{
+     width: 150px;
+    height: 150px;
+    background-color: red;
+}
+.item3{
+     width: 150px;
+    height: 150px;
+    background-color: green;
+}
+/* .paragraph{
+    background-color: red;
+    position: sticky;
+    left: 0;
+    top: 0;
+} */
+nav{
+    width: 100vw;
+    height: 70px;
+    box-shadow: 2px 2px 5px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.nav-logo{
+    width: 20%;
+    /* background-color: brown; */
+    display: flex;
+}
+.nav-logo p{
+    color: blue;
+    font-size: 25px;
+
+}
+.nav-logo p span{
+    color: brown;
+}
+ul{
+    width: 70%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+.nav-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.nav-btn button{
+    padding: 10px 20px;
+    background-color: rgb(45, 214, 11);
+    border: none;
+    border-radius: 5px;
+    font-size: 13px;
+
+   
+}
+.nav-btn button:hover{
+    background-color: rgb(225, 30, 9);
+    cursor: pointer;
+}
+ul li{
+    transition-property: color;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+}
+ul li:hover{
+    color: red;
+    cursor: pointer;
+}
+.move{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+    transition-delay: 3s;
+
+}
+.move:hover{
+    transform: translate(600px);
+}
