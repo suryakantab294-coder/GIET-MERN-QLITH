@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HR Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <!-- Sidebar -->
+  <div class="flex min-h-screen">
+    <aside class="w-20 bg-indigo-900 text-white flex flex-col items-center py-6 space-y-6">
+      <div class="text-lg font-bold">HR</div>
+      <nav class="flex flex-col space-y-6 text-sm">
+        <a href="#" class="hover:text-indigo-300"><i class="fas fa-home"></i><br>Home</a>
+        <a href="#" class="hover:text-indigo-300"><i class="fas fa-calendar"></i><br>Calendar</a>
+        <a href="#" class="hover:text-indigo-300"><i class="fas fa-folder"></i><br>Files</a>
+        <a href="#" class="hover:text-indigo-300"><i class="fas fa-building"></i><br>Companies</a>
+        <a href="#" class="hover:text-indigo-300"><i class="fas fa-tasks"></i><br>Tasks</a>
+        <a href="#" class="hover:text-indigo-300"><i class="fas fa-question-circle"></i><br>FAQs</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-8">
+      <!-- Header -->
+      <header class="flex justify-between items-center mb-8">
+        <h1 class="text-2xl font-semibold text-gray-800">Services</h1>
+        <div class="flex items-center space-x-4">
+          <input type="text" placeholder="Search" class="px-3 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 w-64">
+          <div class="flex items-center space-x-3 text-gray-600">
+            <i class="fas fa-cog cursor-pointer"></i>
+            <i class="fas fa-bell cursor-pointer"></i>
+            <img src="./image/WhatsApp Image 2024-11-07 at 14.19.15_ad551403.jpg" alt="User" class="rounded-full w-10 h-10">
+          </div>
+        </div>
+      </header>
+
+      <!-- Top Cards -->
+      <section class="grid grid-cols-4 gap-6 mb-10">
+        <div class="bg-indigo-400 text-white p-6 rounded-2xl shadow-md flex justify-between items-center">
+          <div>
+            <h2 class="text-lg font-medium">Home</h2>
+            <p class="text-sm">14 alerts</p>
+          </div>
+          <i class="fas fa-home text-3xl"></i>
+        </div>
+        <div class="bg-yellow-400 text-white p-6 rounded-2xl shadow-md flex justify-between items-center">
+          <div>
+            <h2 class="text-lg font-medium">Calendar</h2>
+            <p class="text-sm">5 events</p>
+          </div>
+          <i class="fas fa-calendar text-3xl"></i>
+        </div>
+        <div class="bg-blue-400 text-white p-6 rounded-2xl shadow-md flex justify-between items-center">
+          <div>
+            <h2 class="text-lg font-medium">Files</h2>
+            <p class="text-sm">21 items</p>
+          </div>
+          <i class="fas fa-folder text-3xl"></i>
+        </div>
+        <div class="bg-pink-400 text-white p-6 rounded-2xl shadow-md flex justify-between items-center">
+          <div>
+            <h2 class="text-lg font-medium">Companies</h2>
+            <p class="text-sm">17 profiles</p>
+          </div>
+          <i class="fas fa-store text-3xl"></i>
+        </div>
+      </section>
+
+      <!-- Service Grid -->
+      <section class="grid grid-cols-6 gap-6">
+        <div class="bg-white rounded-xl shadow p-6 text-center hover:shadow-lg">
+          <i class="fas fa-tasks text-indigo-500 text-2xl mb-2"></i>
+          <p class="text-sm font-medium text-gray-700">Tasks</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-6 text-center hover:shadow-lg">
+          <i class="fas fa-question-circle text-indigo-500 text-2xl mb-2"></i>
+          <p class="text-sm font-medium text-gray-700">FAQs</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-6 text-center hover:shadow-lg">
+          <i class="fas fa-birthday-cake text-indigo-500 text-2xl mb-2"></i>
+          <p class="text-sm font-medium text-gray-700">Birthdays</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-6 text-center hover:shadow-lg">
+          <i class="fas fa-star text-indigo-500 text-2xl mb-2"></i>
+          <p class="text-sm font-medium text-gray-700">Favorites</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-6 text-center hover:shadow-lg">
+          <i class="fas fa-glass-cheers text-indigo-500 text-2xl mb-2"></i>
+          <p class="text-sm font-medium text-gray-700">Company Parties</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-6 text-center hover:shadow-lg">
+          <i class="fas fa-calendar-alt text-indigo-500 text-2xl mb-2"></i>
+          <p class="text-sm font-medium text-gray-700">Schedule</p>
+        </div>
+
+        <div class="bg-white rounded-xl shadow p-6 text-center hover:shadow-lg">
+          <i class="fas fa-flag text-indigo-500 text-2xl mb-2"></i>
+          <p class="text-sm font-medium text-gray-700">Goals</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-6 text-center hover:shadow-lg">
+          <i class="fas fa-clock text-indigo-500 text-2xl mb-2"></i>
+          <p class="text-sm font-medium text-gray-700">Timelogs</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-6 text-center hover:shadow-lg">
+          <i class="fas fa-folder text-indigo-500 text-2xl mb-2"></i>
+          <p class="text-sm font-medium text-gray-700">Folders</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-6 text-center hover:shadow-lg">
+          <i class="fas fa-id-badge text-indigo-500 text-2xl mb-2"></i>
+          <p class="text-sm font-medium text-gray-700">Employees</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-6 text-center hover:shadow-lg">
+          <i class="fas fa-bell text-indigo-500 text-2xl mb-2"></i>
+          <p class="text-sm font-medium text-gray-700">Notifications</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-6 text-center hover:shadow-lg">
+          <i class="fas fa-newspaper text-indigo-500 text-2xl mb-2"></i>
+          <p class="text-sm font-medium text-gray-700">News</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
