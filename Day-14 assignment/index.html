@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Practice</title>
+  <style>
+    .box {
+      width: 150px;
+      height: 150px;
+      background: lightgray;
+      margin-bottom: 10px;
+    }
+    .active {
+      background: lightgreen;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1️ Change Text -->
+  <p id="text">Original Text</p>
+  <button onclick="changeText()">Change Text</button>
+
+  <hr>
+
+  <!-- 2️ Toggle Class -->
+  <div id="box" class="box"></div>
+  <button onclick="toggleClass()">Toggle Class</button>
+
+  <hr>
+
+  <!-- 3️ Create Element -->
+  <ul id="list"></ul>
+  <button onclick="addItem()">Add List Item</button>
+
+  <hr>
+
+  <!-- 4️ Count Elements -->
+  <p>Total List Items: <span id="count">0</span></p>
+
+  <hr>
+
+  <!-- 5️ Image Switch -->
+  <img id="image" src="https://via.placeholder.com/150/0000FF" width="150">
+  <br><br>
+  <button onclick="toggleImage()">Switch Image</button>
+
+  <script>
+    // 1️ Change Text
+    function changeText() {
+      document.getElementById("text").textContent = "Hello DOM";
+    }
+
+    // 2️ Toggle Class
+    function toggleClass() {
+      document.getElementById("box").classList.toggle("active");
+    }
+
+    // 3️ Create Element + 4️ Count Elements
+    function addItem() {
+      const ul = document.getElementById("list");
+      const li = document.createElement("li");
+      li.textContent = "List Item " + (ul.children.length + 1);
+      ul.appendChild(li);
+
+      updateCount();
+    }
+
+    function updateCount() {
+      const count = document.querySelectorAll("#list li").length;
+      document.getElementById("count").textContent = count;
+    }
+
+    // 5️ Image Switch
+    let isFirstImage = true;
+
+    function toggleImage() {
+      const img = document.getElementById("image");
+      img.src = isFirstImage
+        ? "https://via.placeholder.com/150/FF0000"
+        : "https://via.placeholder.com/150/0000FF";
+      isFirstImage = !isFirstImage;
+    }
+  </script>
+
+</body>
+</html>

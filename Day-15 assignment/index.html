@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Handling Practice</title>
+  <style>
+    .hover-box {
+      width: 200px;
+      height: 100px;
+      background-color: lightgray;
+      margin-top: 10px;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1️ Click Counter -->
+  <button id="counterBtn">Click Me</button>
+  <span id="counter">0</span>
+
+  <hr>
+
+  <!-- 2️ Disable Button After 5 Clicks -->
+  <button id="limitBtn">Click (0)</button>
+
+  <hr>
+
+  <!-- 3️ Input Live Length Counter -->
+  <input type="text" id="textInput" maxlength="20">
+  <p id="charCount">0 / 20</p>
+
+  <hr>
+
+  <!-- 4️ Change Background on Hover -->
+  <div class="hover-box" id="hoverBox"></div>
+
+  <hr>
+
+  <!-- 5️ Form Validation -->
+  <form id="myForm">
+    <input type="text" id="name" placeholder="Name">
+    <br><br>
+    <input type="email" id="email" placeholder="Email">
+    <br><br>
+    <button type="submit">Submit</button>
+    <p id="formError" class="error"></p>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
